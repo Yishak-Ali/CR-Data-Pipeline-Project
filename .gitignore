@@ -3,3 +3,4 @@
 /configs/config.py
 /configs/config.json
 __pycache__
+.vscode
