@@ -1,0 +1,5 @@
+.ipynb_checkpoints
+.DS_Store
+/configs/config.py
+/configs/config.json
+__pycache__

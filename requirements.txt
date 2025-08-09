@@ -1,0 +1,4 @@
+requests             # API calls to Clash Royale
+pandas               # Data manipulation
+SQLAlchemy           # Database ORM
+pyodbc               # SQL Server DB connector
