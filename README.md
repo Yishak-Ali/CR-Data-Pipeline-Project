@@ -44,7 +44,7 @@ This project builds on an [earlier analytics work](https://github.com/Yishak-Ali
 2. **Extraction**: Upon each run, Python scripts send requests to the API and parse the JSON data.
 A dynamic player ID filter removes known terminated or banned players before proceeding to transformation.
 
-3. **Transformation**: JSON responses are normalized and processed into a structured DataFrame. A deduplication filter ensures no duplicate records are stored. Newly failed player ID pings (terminated or banned players) are logged into a blacklist, preventing failed pings to API on subsequent runs.
+3. **Transformation**: JSON responses are normalized and processed into a structured DataFrame. A deduplication filter, driven by checks of the database, ensures no duplicate records are stored. Newly failed player ID pings (terminated or banned players) are logged into a blacklist, preventing failed pings to API on subsequent runs.
 
 4. **Loading**: Cleaned data is loaded into a local SQL Server database via SQLAlchemy. Any existing database records associated with failed players are purged. A logging mechanism records script activity, status, and errors for traceability.
 
@@ -110,7 +110,7 @@ A dynamic player ID filter removes known terminated or banned players before pro
 
 
 ## Limitations & Future Work
-There are a few limitations with this work. One element is that while the exact limit is unknown due to poor API documentation, there is some rate limit to the API. The ETL script has built in wait periods to stay under a reasonable limit, but this means that as the number of tracked entities grows, run times will keeping growing. 
+There are a few limitations with this work. One element is that while the exact limit is unknown due to poor API documentation, there is *some* rate limit to the API. The ETL script has built-in wait periods to stay under a reasonable limit, but this means that as the number of tracked entities grows, run times will keeping growing. 
 
 Additionally, depending on the frequency of script runs, you will miss matches by players. The API only returns the last 30 matches, so it is possible players can play enough games between script runs to wipe the API's access to older but not yet stored games. With enough runs though, the database will store plenty of matches for the current and historical seasons to run meaningful analytics, despite these gaps.
 
