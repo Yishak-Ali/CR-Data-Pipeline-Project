@@ -1,11 +1,7 @@
-Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
-Traceback (most recent call last):
-  File "\\Mac\Home\Desktop\Data Sci\06. Personal Projects\CR Data Pipeline Project\etl_pipeline_script.py", line 2, in <module>
-    import pandas as pd
-ModuleNotFoundError: No module named 'pandas'
 2025-08-09 08:24:27,081 — INFO — Starting ETL pipeline
 2025-08-09 08:24:27,271 — INFO — No new seasons to add
-2025-08-09 08:26:51,641 — WARNING — Added 0 player(s) into dropped list.2025-08-09 08:36:43,314 — INFO — Starting ETL pipeline
+2025-08-09 08:26:51,641 — WARNING — Added 0 player(s) into dropped list.
+2025-08-09 08:36:43,314 — INFO — Starting ETL pipeline
 2025-08-09 08:36:43,428 — INFO — No new seasons to add
 2025-08-09 08:39:02,303 — WARNING — Added 0 player(s) into dropped list.
 2025-08-09 08:41:39,458 — INFO — Upsert executed on 289 clan rows.
