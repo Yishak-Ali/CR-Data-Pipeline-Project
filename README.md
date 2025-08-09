@@ -30,7 +30,7 @@ This project builds on an [earlier analytics work](https://github.com/Yishak-Ali
     - pandas
     - sqlalchemy
     - requests
-    - logging
+    - pyodbc
 - SQL Server
 - Visual Studio Code
 - Task Scheduler
@@ -41,7 +41,7 @@ This project builds on an [earlier analytics work](https://github.com/Yishak-Ali
 
 1. **Source Data**: Clash Royale API serves as the data source, providing JSON responses for relevant data associated with tracked top players (past top 100 ranked / Path of Legends season finishers).
 
-2. **Extraction**: Python scripts send requests to the API and parse the JSON data.
+2. **Extraction**: Upon each run, Python scripts send requests to the API and parse the JSON data.
 A dynamic player ID filter removes known terminated or banned players before proceeding to transformation.
 
 3. **Transformation**: JSON responses are normalized and processed into a structured DataFrame. A deduplication filter ensures no duplicate records are stored. Newly failed player ID pings (terminated or banned players) are logged into a blacklist, preventing failed pings to API on subsequent runs.
@@ -68,8 +68,8 @@ A dynamic player ID filter removes known terminated or banned players before pro
 
 ## How to Use
 1. Clone the repository.
-2. Connect to your SQL Server instance and run the [data base creation script](https://github.com/Yishak-Ali/CR-Data-Pipeline-Project/blob/main/sql/db_creation_script.sql) with your GUI of choice.
-3. Create a python virtual environment (optional but recommended):
+2. Connect to your SQL Server instance and run the [database creation script](https://github.com/Yishak-Ali/CR-Data-Pipeline-Project/blob/main/sql/db_creation_script.sql) with your GUI of choice.
+3. From the project root directory, create a Python virtual environment (optional but recommended):
 
         python -m venv venv 
         
@@ -110,3 +110,10 @@ A dynamic player ID filter removes known terminated or banned players before pro
 
 
 ## Limitations & Future Work
+There are a few limitations with this work. One element is that while the exact limit is unknown due to poor API documentation, there is some rate limit to the API. The ETL script has built in wait periods to stay under a reasonable limit, but this means that as the number of tracked entities grows, run times will keeping growing. 
+
+Additionally, depending on the frequency of script runs, you will miss matches by players. The API only returns the last 30 matches, so it is possible players can play enough games between script runs to wipe the API's access to older but not yet stored games. With enough runs though, the database will store plenty of matches for the current and historical seasons to run meaningful analytics, despite these gaps.
+
+With regard to future work, a data warehouse might be useful for long-term storage of historical data (matches and players past a certain season or historical clans). This would help with growing run times as older entities are archived into a warehouse, removing the need to ping data for them.
+
+The project can also expand with incorporation of advanced analytics, specifically applying machine learning to predict win probabilities, identify meta shifts, and detect emerging strategies.
