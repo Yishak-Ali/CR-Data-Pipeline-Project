@@ -68,7 +68,7 @@ A dynamic player ID filter removes known terminated or banned players before pro
 
 ## How to Use
 1. Clone the repository.
-2. Connect to your SQL Server instance and run the [data base creation script]() with your GUI of choice.
+2. Connect to your SQL Server instance and run the [data base creation script](https://github.com/Yishak-Ali/CR-Data-Pipeline-Project/blob/main/sql/db_creation_script.sql) with your GUI of choice.
 3. Create a python virtual environment (optional but recommended):
 
         python -m venv venv 
@@ -93,7 +93,7 @@ A dynamic player ID filter removes known terminated or banned players before pro
 
 6. Obtain a Clash Royale API key [here](https://developer.clashroyale.com/#/getting-started).
 
-7. Create a .py file named config.py and a .json file named config.json in the [configs directory]() of repo.
+7. Create a .py file named config.py and a .json file named config.json in the [configs directory](https://github.com/Yishak-Ali/CR-Data-Pipeline-Project/tree/main/configs) of repo.
 
         write to config.py: API_KEY = {'Key':'your_api_key_here'}
 
