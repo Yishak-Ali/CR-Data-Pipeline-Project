@@ -1,21 +1,21 @@
--- CREATE DATABASE clash_royale;
--- GO
+CREATE DATABASE clash_royale;
+GO
 
 USE clash_royale;
 GO
 
 -- || DROP OBJECTS IF EXIST || --
 
--- DROP VIEW IF EXISTS vw_recent_rankings;
--- DROP VIEW IF EXISTS vw_player_clan;
--- DROP TABLE IF EXISTS season_rankings;
--- DROP TABLE IF EXISTS match_cards;
--- DROP TABLE IF EXISTS cards;
--- DROP TABLE IF EXISTS matches;
--- DROP TABLE IF EXISTS seasons;
--- DROP TABLE IF EXISTS players;
--- DROP TABLE IF EXISTS clans;
--- GO
+DROP VIEW IF EXISTS vw_recent_rankings;
+DROP VIEW IF EXISTS vw_player_clan;
+DROP TABLE IF EXISTS season_rankings;
+DROP TABLE IF EXISTS match_cards;
+DROP TABLE IF EXISTS cards;
+DROP TABLE IF EXISTS matches;
+DROP TABLE IF EXISTS seasons;
+DROP TABLE IF EXISTS players;
+DROP TABLE IF EXISTS clans;
+GO
 
 -- || CREATE DATABASE TABLES || --
 
