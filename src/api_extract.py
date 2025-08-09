@@ -13,7 +13,7 @@ dropped_players_path = os.path.join(project_root, 'dropped_data', 'dropped_playe
 
 # define api endpoint and credentials
 base_url = 'https://api.clashroyale.com/v1'
-api_key = API_KEY.get('Home')
+api_key = API_KEY.get('Key')
 headers = {'Authorization': f'Bearer {api_key}'}
 
 # create function to pull player data into df
