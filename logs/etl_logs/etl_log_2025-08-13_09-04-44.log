@@ -1,0 +1,12 @@
+2025-08-13 09:04:44,291 — INFO — Starting ETL pipeline
+2025-08-13 09:04:45,330 — INFO — No new seasons to add
+2025-08-13 09:07:24,486 — WARNING — Added 1 player(s) into dropped list.
+2025-08-13 09:10:46,950 — INFO — Upsert executed on 358 clan rows.
+2025-08-13 09:10:47,591 — INFO — Upsert executed on 233 player rows.
+2025-08-13 09:10:47,592 — ERROR — 1 player(s) failed to fetch. Already flagged for dropping: ['#20YLQ92CVP']
+2025-08-13 09:10:47,602 — INFO — No new seasons rankings to add.
+2025-08-13 09:10:48,081 — WARNING — Removed all database records for 1 player(s): ['#20YLQ92CVP']
+2025-08-13 09:10:48,925 — INFO — Upsert executed on 120 card rows.
+2025-08-13 09:13:32,523 — INFO — Inserted 2651 new match views, of which 2575 are unique matches.
+2025-08-13 09:13:33,939 — INFO — Inserted 21208 new rows into match_cards, spanning 2651 match views.
+2025-08-13 09:13:33,940 — INFO — ETL pipeline complete
