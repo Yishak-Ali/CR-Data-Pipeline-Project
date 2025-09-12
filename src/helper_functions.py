@@ -25,8 +25,8 @@ def last_n_completed_seasons(n=3, ref_date=None):
     # build seasons (start date, end date)
     seasons = []
     for i in range(len(first_mondays) - 1):
-        start = first_mondays[i] + timedelta(hours=9) # specific start time for seasons
-        end = first_mondays[i+1] + timedelta(hours=9) - timedelta(seconds=1)
+        start = first_mondays[i] + timedelta(hours=9) + timedelta(minutes=5) # specific start time for seasons
+        end = first_mondays[i+1] + timedelta(hours=9) + timedelta(minutes=5) - timedelta(seconds=1)
 
         if end < ref_date:
             season_id = start.strftime('%Y-%m') # extract season_id from season start datetime
@@ -56,8 +56,8 @@ def current_plus_n_seasons(n=3, ref_date=None):
     # build seasons as list of dicts with each dict representing a season row
     seasons = []
     for i in range(len(first_mondays) - 1):
-        start = first_mondays[i] + timedelta(hours=9)
-        end = first_mondays[i+1] + timedelta(hours=9) - timedelta(seconds=1)
+        start = first_mondays[i] + timedelta(hours=9) + timedelta(minutes=5)
+        end = first_mondays[i+1] + timedelta(hours=9) + timedelta(minutes=5) - timedelta(seconds=1)
         if start <= ref_date <= end: # add current season
             season_id = start.strftime('%Y-%m')
             seasons.append({'season_id': season_id,
