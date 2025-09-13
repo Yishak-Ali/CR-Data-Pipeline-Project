@@ -68,11 +68,11 @@ A dynamic player ID filter removes known terminated or banned players before pro
 
 ## Power BI Dashboard Highlights
 **Dashboard 1**: 
-<img src="power_bi/dashboard_1_png.png" alt="d1" width="1000"/>
+<img src="power_bi/dashboard_1_png.png" alt="dash1" width="1000"/>
 **Dashboard 2**:
-<img src="power_bi/dashboard_2_png.png" alt="d2" width="1000"/>
+<img src="power_bi/dashboard_2_png.png" alt="dash2" width="1000"/>
 **Dashboard 3**:
-<img src="power_bi/dashboard_3_png.png" alt="d3" width="1000"/>
+<img src="power_bi/dashboard_3_png.png" alt="dash3" width="1000"/>
 
 
 ## How to Use
