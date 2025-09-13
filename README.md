@@ -39,7 +39,7 @@ This project builds on an [earlier analytics work](https://github.com/Yishak-Ali
 **Pipeline Diagram:**
 <img src="pipeline_diagram.png" alt="pipeline_diagram" width="1000"/>
 
-1. **Source Data**: Clash Royale API serves as the data source, providing JSON responses for relevant data associated with tracked top players (past top 100 ranked / Path of Legends season finishers).
+1. **Source Data**: Clash Royale API serves as the data source, providing JSON responses for relevant data associated with tracked top players (past top 100 Ranked / Path of Legends season finishers).
 
 2. **Extraction**: Upon each run, Python scripts send requests to the API and parse the JSON data.
 A dynamic player ID filter removes known terminated or banned players before proceeding to transformation.
@@ -65,6 +65,15 @@ A dynamic player ID filter removes known terminated or banned players before pro
 - season_rankings: final player standings by season
 - seasons: tracked ranked seasons
 - clans: clan data for top players
+
+## Power BI Dashboard Highlights
+**Dashboard 1**: 
+<img src="power_bi/dashboard_1_png.png" alt="d1" width="1000"/>
+**Dashboard 2**:
+<img src="power_bi/dashboard_2_png.png" alt="d2" width="1000"/>
+**Dashboard 3**:
+<img src="power_bi/dashboard_3_png.png" alt="d3" width="1000"/>
+
 
 ## How to Use
 1. Clone the repository.
