@@ -444,3 +444,606 @@ KeyError: 'player_id'
 2025-08-18 11:06:17,395 — INFO — Inserted 3751 new match views, of which 3609 are unique matches.
 2025-08-18 11:06:19,317 — INFO — Inserted 30008 new rows into match_cards, spanning 3751 match views.
 2025-08-18 11:06:19,317 — INFO — ETL pipeline complete
+2025-08-18 19:15:07,916 — INFO — Starting ETL pipeline
+2025-08-18 19:15:08,128 — INFO — No new seasons to add
+Failed to fetch data for 2025-04.
+Failed to fetch data for 2025-05.
+Failed to fetch data for 2025-06.
+Failed to fetch data for 2025-07.
+Traceback (most recent call last):
+  File "\\Mac\Home\Desktop\Data Sci\06. Personal Projects\CR Data Pipeline Project\etl_pipeline_script.py", line 159, in <module>
+    run_etl_script()
+    ~~~~~~~~~~~~~~^^
+  File "\\Mac\Home\Desktop\Data Sci\06. Personal Projects\CR Data Pipeline Project\etl_pipeline_script.py", line 58, in run_etl_script
+    tracked_players = season_ranking_df['player_id'].unique().tolist() # this will pick up players who are recently terminated or banned after ranking, later filtered out
+                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\yishakali\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 4107, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\yishakali\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\range.py", line 417, in get_loc
+    raise KeyError(key)
+KeyError: 'player_id'
+2025-08-18 19:23:21,558 — INFO — Starting ETL pipeline
+2025-08-18 19:23:21,733 — INFO — No new seasons to add
+2025-08-18 19:25:52,764 — WARNING — Added 0 player(s) into dropped list.
+2025-08-18 19:29:20,652 — INFO — Upsert executed on 412 clan rows.
+2025-08-18 19:29:21,213 — INFO — Upsert executed on 233 player rows.
+2025-08-18 19:29:21,267 — INFO — No new seasons rankings to add.
+2025-08-18 19:29:21,946 — INFO — Upsert executed on 120 card rows.
+2025-08-18 19:31:48,654 — INFO — Inserted 1586 new match views, of which 1521 are unique matches.
+2025-08-18 19:31:49,669 — INFO — Inserted 12688 new rows into match_cards, spanning 1586 match views.
+2025-08-18 19:31:49,672 — INFO — ETL pipeline complete
+2025-08-19 07:15:08,044 — INFO — Starting ETL pipeline
+2025-08-19 07:15:08,643 — INFO — No new seasons to add
+2025-08-19 07:17:19,742 — WARNING — Added 0 player(s) into dropped list.
+2025-08-19 07:20:54,409 — INFO — Upsert executed on 417 clan rows.
+2025-08-19 07:20:54,995 — INFO — Upsert executed on 233 player rows.
+2025-08-19 07:20:55,011 — INFO — No new seasons rankings to add.
+2025-08-19 07:20:55,729 — INFO — Upsert executed on 120 card rows.
+2025-08-19 07:23:10,824 — INFO — Inserted 1244 new match views, of which 1196 are unique matches.
+2025-08-19 07:23:11,939 — INFO — Inserted 9952 new rows into match_cards, spanning 1244 match views.
+2025-08-19 07:23:11,940 — INFO — ETL pipeline complete
+2025-08-19 19:15:08,257 — INFO — Starting ETL pipeline
+2025-08-19 19:15:08,753 — INFO — No new seasons to add
+2025-08-19 19:17:25,153 — WARNING — Added 0 player(s) into dropped list.
+2025-08-19 19:21:02,107 — INFO — Upsert executed on 426 clan rows.
+2025-08-19 19:21:02,747 — INFO — Upsert executed on 233 player rows.
+2025-08-19 19:21:02,763 — INFO — No new seasons rankings to add.
+2025-08-19 19:21:03,400 — INFO — Upsert executed on 120 card rows.
+2025-08-19 19:23:28,855 — INFO — Inserted 1613 new match views, of which 1549 are unique matches.
+2025-08-19 19:23:30,265 — INFO — Inserted 12904 new rows into match_cards, spanning 1613 match views.
+2025-08-19 19:23:30,266 — INFO — ETL pipeline complete
+2025-08-20 07:15:09,356 — INFO — Starting ETL pipeline
+2025-08-20 07:15:09,605 — INFO — No new seasons to add
+2025-08-20 07:17:41,033 — WARNING — Added 0 player(s) into dropped list.
+2025-08-20 11:57:39,801 — INFO — Starting ETL pipeline
+2025-08-20 11:57:39,998 — INFO — No new seasons to add
+Failed to fetch data for 2025-04.
+Failed to fetch data for 2025-05.
+Failed to fetch data for 2025-06.
+Failed to fetch data for 2025-07.
+Traceback (most recent call last):
+  File "\\Mac\Home\Desktop\Data Sci\06. Personal Projects\CR Data Pipeline Project\etl_pipeline_script.py", line 159, in <module>
+    run_etl_script()
+    ~~~~~~~~~~~~~~^^
+  File "\\Mac\Home\Desktop\Data Sci\06. Personal Projects\CR Data Pipeline Project\etl_pipeline_script.py", line 58, in run_etl_script
+    tracked_players = season_ranking_df['player_id'].unique().tolist() # this will pick up players who are recently terminated or banned after ranking, later filtered out
+                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\yishakali\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 4107, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\yishakali\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\range.py", line 417, in get_loc
+    raise KeyError(key)
+KeyError: 'player_id'
+2025-08-20 19:15:08,142 — INFO — Starting ETL pipeline
+2025-08-20 19:15:08,288 — INFO — No new seasons to add
+2025-08-20 19:18:12,286 — WARNING — Added 0 player(s) into dropped list.
+2025-08-20 19:22:43,813 — INFO — Upsert executed on 441 clan rows.
+2025-08-20 19:22:44,197 — INFO — Upsert executed on 233 player rows.
+2025-08-20 19:22:44,213 — INFO — No new seasons rankings to add.
+2025-08-20 19:22:44,900 — INFO — Upsert executed on 120 card rows.
+2025-08-20 19:25:06,246 — INFO — Inserted 2666 new match views, of which 2579 are unique matches.
+2025-08-20 19:25:07,868 — INFO — Inserted 21328 new rows into match_cards, spanning 2666 match views.
+2025-08-20 19:25:07,868 — INFO — ETL pipeline complete
+2025-08-21 07:15:08,441 — INFO — Starting ETL pipeline
+2025-08-21 07:15:08,658 — INFO — No new seasons to add
+2025-08-21 07:17:39,737 — WARNING — Added 0 player(s) into dropped list.
+2025-08-21 07:21:45,690 — INFO — Upsert executed on 447 clan rows.
+2025-08-21 07:21:46,094 — INFO — Upsert executed on 233 player rows.
+2025-08-21 07:21:46,148 — INFO — No new seasons rankings to add.
+2025-08-21 07:21:46,756 — INFO — Upsert executed on 120 card rows.
+2025-08-21 07:24:12,038 — INFO — Inserted 1315 new match views, of which 1248 are unique matches.
+2025-08-21 07:24:13,237 — INFO — Inserted 10520 new rows into match_cards, spanning 1315 match views.
+2025-08-21 07:24:13,237 — INFO — ETL pipeline complete
+2025-08-23 21:42:16,945 — INFO — Starting ETL pipeline
+2025-08-23 21:42:17,262 — INFO — No new seasons to add
+2025-08-23 21:44:33,796 — WARNING — Added 0 player(s) into dropped list.
+2025-08-23 21:48:52,438 — INFO — Upsert executed on 474 clan rows.
+2025-08-23 21:48:53,293 — INFO — Upsert executed on 233 player rows.
+2025-08-23 21:48:53,305 — INFO — No new seasons rankings to add.
+2025-08-23 21:48:54,086 — INFO — Upsert executed on 120 card rows.
+2025-08-23 21:51:11,625 — INFO — Inserted 3743 new match views, of which 3564 are unique matches.
+2025-08-23 21:51:13,510 — INFO — Inserted 29944 new rows into match_cards, spanning 3743 match views.
+2025-08-23 21:51:13,511 — INFO — ETL pipeline complete
+2025-08-24 07:16:58,741 — INFO — Starting ETL pipeline
+2025-08-24 07:17:02,015 — INFO — No new seasons to add
+2025-08-24 07:19:34,481 — WARNING — Added 0 player(s) into dropped list.
+2025-08-24 07:23:57,485 — INFO — Upsert executed on 484 clan rows.
+2025-08-24 07:23:58,095 — INFO — Upsert executed on 233 player rows.
+2025-08-24 07:23:58,116 — INFO — No new seasons rankings to add.
+2025-08-24 07:23:58,784 — INFO — Upsert executed on 120 card rows.
+2025-08-24 07:26:31,028 — INFO — Inserted 1092 new match views, of which 1059 are unique matches.
+2025-08-24 07:26:32,073 — INFO — Inserted 8736 new rows into match_cards, spanning 1092 match views.
+2025-08-24 07:26:32,073 — INFO — ETL pipeline complete2025-08-26 07:52:19,013 — INFO — Starting ETL pipeline
+2025-08-26 07:52:19,396 — INFO — No new seasons to add
+2025-08-26 07:54:38,260 — WARNING — Added 0 player(s) into dropped list.
+2025-08-26 07:59:05,702 — INFO — Upsert executed on 501 clan rows.
+2025-08-26 07:59:06,504 — INFO — Upsert executed on 233 player rows.
+2025-08-26 07:59:06,514 — INFO — No new seasons rankings to add.
+2025-08-26 07:59:07,343 — INFO — Upsert executed on 120 card rows.
+2025-08-26 08:01:30,388 — INFO — Inserted 3557 new match views, of which 3371 are unique matches.
+2025-08-26 08:01:32,220 — INFO — Inserted 28456 new rows into match_cards, spanning 3557 match views.
+2025-08-26 08:01:32,220 — INFO — ETL pipeline complete
+2025-08-26 19:15:07,772 — INFO — Starting ETL pipeline
+2025-08-26 19:15:07,990 — INFO — No new seasons to add
+2025-08-26 19:17:21,449 — WARNING — Added 0 player(s) into dropped list.
+2025-08-26 19:37:20,169 — INFO — Upsert executed on 499 clan rows.
+2025-08-26 19:37:20,170 — ERROR — 16 clan(s) failed to fetch. Retry later: ['#G0GUYQL2', '#G0Y0YV8L', '#RY0J2CCV', '#G0LRLLL0', '#G0YJJY0R', '#G8YP9UCL', '#G89G9PP8', '#RQVRYVQU', '#G0UUU2QG', '#PPRYY2RC', '#GQPG20CR', '#G0V2J989', '#GRGC0LCP', '#GJCVCJCG', '#G209PQL8', '#RL09V9LC']
+2025-08-26 19:37:20,768 — INFO — Upsert executed on 233 player rows.
+2025-08-26 19:37:20,775 — INFO — No new seasons rankings to add.
+2025-08-26 19:37:21,434 — INFO — Upsert executed on 120 card rows.
+2025-08-26 19:39:47,717 — INFO — Inserted 1828 new match views, of which 1753 are unique matches.
+2025-08-26 19:39:49,066 — INFO — Inserted 14624 new rows into match_cards, spanning 1828 match views.
+2025-08-26 19:39:49,067 — INFO — ETL pipeline complete
+Exception for clan #G0GUYQL2: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23G0GUYQL2 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F3A891EFD0>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #G0Y0YV8L: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23G0Y0YV8L (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F3A891F9D0>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #RY0J2CCV: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23RY0J2CCV (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F3A891FB10>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #G0LRLLL0: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23G0LRLLL0 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F3A89DC7D0>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #G0YJJY0R: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23G0YJJY0R (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F3A89DCA50>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #G8YP9UCL: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23G8YP9UCL (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F3A89DCB90>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #G89G9PP8: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23G89G9PP8 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F3A89DCF50>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #RQVRYVQU: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23RQVRYVQU (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F3A89DD310>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #G0UUU2QG: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23G0UUU2QG (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F3A89DD6D0>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #PPRYY2RC: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23PPRYY2RC (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F3A891FB10>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #GQPG20CR: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23GQPG20CR (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F3A891F9D0>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #G0V2J989: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23G0V2J989 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F3A891EFD0>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #GRGC0LCP: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23GRGC0LCP (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F3A89DD310>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #GJCVCJCG: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23GJCVCJCG (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F3A89DCF50>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #G209PQL8: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23G209PQL8 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F3A89DCB90>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #RL09V9LC: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23RL09V9LC (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F3A89DCA50>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+2025-08-27 07:15:06,503 — INFO — Starting ETL pipeline
+2025-08-27 07:15:07,091 — INFO — No new seasons to add
+2025-08-27 07:17:17,611 — WARNING — Added 0 player(s) into dropped list.
+2025-08-27 07:21:40,726 — INFO — Upsert executed on 517 clan rows.
+2025-08-27 07:21:41,304 — INFO — Upsert executed on 233 player rows.
+2025-08-27 07:21:41,316 — INFO — No new seasons rankings to add.
+2025-08-27 07:21:42,103 — INFO — Upsert executed on 120 card rows.
+2025-08-27 07:23:59,364 — INFO — Inserted 1612 new match views, of which 1535 are unique matches.
+2025-08-27 07:24:00,996 — INFO — Inserted 12896 new rows into match_cards, spanning 1612 match views.
+2025-08-27 07:24:00,997 — INFO — ETL pipeline complete
+2025-08-29 19:15:08,285 — INFO — Starting ETL pipeline
+2025-08-29 19:15:08,560 — INFO — No new seasons to add
+2025-08-29 19:17:41,766 — WARNING — Added 0 player(s) into dropped list.
+2025-08-29 19:22:37,934 — INFO — Upsert executed on 542 clan rows.
+2025-08-29 19:22:38,549 — INFO — Upsert executed on 233 player rows.
+2025-08-29 19:22:38,566 — INFO — No new seasons rankings to add.
+2025-08-29 19:22:39,352 — INFO — Upsert executed on 120 card rows.
+2025-08-29 19:32:41,777 — INFO — Inserted 4080 new match views, of which 3888 are unique matches.
+2025-08-29 19:32:43,752 — INFO — Inserted 32640 new rows into match_cards, spanning 4080 match views.
+2025-08-29 19:32:43,752 — INFO — ETL pipeline complete
+2025-08-30 07:15:07,355 — INFO — Starting ETL pipeline
+2025-08-30 07:15:08,195 — INFO — No new seasons to add
+2025-08-30 07:17:34,013 — WARNING — Added 0 player(s) into dropped list.
+2025-08-30 07:22:30,871 — INFO — Upsert executed on 553 clan rows.
+2025-08-30 07:22:31,554 — INFO — Upsert executed on 233 player rows.
+2025-08-30 07:22:31,595 — INFO — No new seasons rankings to add.
+2025-08-30 07:22:32,273 — INFO — Upsert executed on 120 card rows.
+2025-08-30 07:24:59,763 — INFO — Inserted 2077 new match views, of which 1960 are unique matches.
+2025-08-30 07:25:02,106 — INFO — Inserted 16616 new rows into match_cards, spanning 2077 match views.
+2025-08-30 07:25:02,107 — INFO — ETL pipeline complete
+2025-08-30 19:15:09,011 — INFO — Starting ETL pipeline
+2025-08-30 19:15:09,169 — INFO — No new seasons to add
+2025-08-30 19:17:40,166 — WARNING — Added 0 player(s) into dropped list.
+2025-08-30 19:22:47,861 — INFO — Upsert executed on 560 clan rows.
+2025-08-30 19:22:48,119 — INFO — Upsert executed on 233 player rows.
+2025-08-30 19:22:48,127 — INFO — No new seasons rankings to add.
+2025-08-30 19:22:48,691 — INFO — Upsert executed on 120 card rows.
+2025-08-30 19:25:26,397 — INFO — Inserted 2221 new match views, of which 2110 are unique matches.
+2025-08-30 19:25:27,714 — INFO — Inserted 17768 new rows into match_cards, spanning 2221 match views.
+2025-08-30 19:25:27,714 — INFO — ETL pipeline complete
+2025-08-31 07:15:05,123 — INFO — Starting ETL pipeline
+2025-08-31 07:15:05,316 — INFO — No new seasons to add
+2025-08-31 07:17:12,565 — WARNING — Added 0 player(s) into dropped list.
+2025-08-31 07:22:06,213 — INFO — Upsert executed on 562 clan rows.
+2025-08-31 07:22:06,522 — INFO — Upsert executed on 233 player rows.
+2025-08-31 07:22:06,536 — INFO — No new seasons rankings to add.
+2025-08-31 07:22:07,081 — INFO — Upsert executed on 120 card rows.
+2025-08-31 07:24:34,215 — INFO — Inserted 2054 new match views, of which 1924 are unique matches.
+2025-08-31 07:24:35,541 — INFO — Inserted 16432 new rows into match_cards, spanning 2054 match views.
+2025-08-31 07:24:35,541 — INFO — ETL pipeline complete
+2025-08-31 19:15:08,553 — INFO — Starting ETL pipeline
+2025-08-31 19:15:08,706 — INFO — No new seasons to add
+2025-08-31 19:17:25,435 — WARNING — Added 0 player(s) into dropped list.
+2025-08-31 19:22:23,137 — INFO — Upsert executed on 575 clan rows.
+2025-08-31 19:22:23,395 — INFO — Upsert executed on 233 player rows.
+2025-08-31 19:22:23,402 — INFO — No new seasons rankings to add.
+2025-08-31 19:22:24,082 — INFO — Upsert executed on 120 card rows.
+2025-08-31 19:24:58,541 — INFO — Inserted 2726 new match views, of which 2579 are unique matches.
+2025-08-31 19:25:00,230 — INFO — Inserted 21808 new rows into match_cards, spanning 2726 match views.
+2025-08-31 19:25:00,231 — INFO — ETL pipeline complete
+2025-09-01 07:15:08,171 — INFO — Starting ETL pipeline
+2025-09-01 07:15:08,428 — INFO — New seasons to fetch: ['2025-09'].
+2025-09-01 07:15:08,499 — INFO — Inserted 1 new seasons.
+2025-09-01 07:17:58,679 — WARNING — Added 0 player(s) into dropped list.
+2025-09-01 07:23:24,682 — INFO — Upsert executed on 598 clan rows.
+2025-09-01 07:23:25,091 — INFO — Upsert executed on 278 player rows.
+2025-09-01 07:23:25,591 — INFO — Inserted 100 new season rankings.
+2025-09-01 07:23:26,142 — INFO — Upsert executed on 121 card rows.
+2025-09-01 07:26:16,005 — INFO — Inserted 4094 new match views, of which 3833 are unique matches.
+2025-09-01 07:26:18,060 — INFO — Inserted 32752 new rows into match_cards, spanning 4094 match views.
+2025-09-01 07:26:18,060 — INFO — ETL pipeline complete
+2025-09-01 19:15:08,856 — INFO — Starting ETL pipeline
+2025-09-01 19:15:09,080 — INFO — No new seasons to add
+2025-09-01 19:18:09,029 — WARNING — Added 0 player(s) into dropped list.
+2025-09-01 19:23:34,029 — INFO — Upsert executed on 600 clan rows.
+2025-09-01 19:23:34,030 — ERROR — 16 clan(s) failed to fetch. Retry later: ['#G0C8JCUP', '#GLURCPJR', '#GQYPC9RQ', '#G0V9L8CJ', '#G80L2UY2', '#GC89VQVC', '#Q92VR82V', '#R92P020J', '#G2U98PCL', '#9V9GGVCQ', '#Q9V9CPP8', '#QV9CCQUC', '#RYYYQURV', '#GY88L9Q0', '#GC9GCYRJ', '#RC2PGJQQ']
+2025-09-01 19:23:34,469 — INFO — Upsert executed on 278 player rows.
+2025-09-01 19:23:34,480 — INFO — No new seasons rankings to add.
+2025-09-01 19:23:35,807 — INFO — Upsert executed on 121 card rows.
+2025-09-01 19:26:27,836 — INFO — Inserted 954 new match views, of which 932 are unique matches.
+2025-09-01 19:26:29,017 — INFO — Inserted 7632 new rows into match_cards, spanning 954 match views.
+2025-09-01 19:26:29,018 — INFO — ETL pipeline complete
+Exception for clan #G0C8JCUP: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23G0C8JCUP (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002DD7FC6FD90>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #GLURCPJR: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23GLURCPJR (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002DD7FC6F9D0>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #GQYPC9RQ: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23GQYPC9RQ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002DD7FC6FB10>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #G0V9L8CJ: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23G0V9L8CJ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002DD7FD2C7D0>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #G80L2UY2: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23G80L2UY2 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002DD7FD2CA50>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #GC89VQVC: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23GC89VQVC (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002DD7FD2CB90>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #Q92VR82V: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23Q92VR82V (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002DD7FD2CF50>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #R92P020J: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23R92P020J (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002DD7FC6F4D0>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #G2U98PCL: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23G2U98PCL (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002DD7FC6FC50>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #9V9GGVCQ: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%239V9GGVCQ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002DD7FC6EFD0>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #Q9V9CPP8: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23Q9V9CPP8 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002DD7FD2D1D0>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #QV9CCQUC: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23QV9CCQUC (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002DD7FD2CE10>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #RYYYQURV: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23RYYYQURV (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002DD7FD2C550>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #GY88L9Q0: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23GY88L9Q0 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002DD7FD2CCD0>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #GC9GCYRJ: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23GC9GCYRJ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002DD7FD2D310>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for clan #RC2PGJQQ: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/clans/%23RC2PGJQQ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002DD7FD2D6D0>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+2025-09-02 07:15:07,496 — INFO — Starting ETL pipeline
+2025-09-02 07:15:07,733 — INFO — No new seasons to add
+2025-09-02 07:18:06,918 — WARNING — Added 0 player(s) into dropped list.
+2025-09-02 07:23:37,057 — INFO — Upsert executed on 625 clan rows.
+2025-09-02 07:23:37,829 — INFO — Upsert executed on 278 player rows.
+2025-09-02 07:23:37,838 — INFO — No new seasons rankings to add.
+2025-09-02 07:23:38,521 — INFO — Upsert executed on 121 card rows.
+2025-09-02 07:26:27,974 — INFO — Inserted 890 new match views, of which 872 are unique matches.
+2025-09-02 07:26:29,216 — INFO — Inserted 7120 new rows into match_cards, spanning 890 match views.
+2025-09-02 07:26:29,216 — INFO — ETL pipeline complete
+2025-09-02 19:15:08,322 — INFO — Starting ETL pipeline
+2025-09-02 19:15:08,480 — INFO — No new seasons to add
+2025-09-02 19:18:01,727 — WARNING — Added 1 player(s) into dropped list.
+2025-09-02 19:23:42,587 — INFO — Upsert executed on 652 clan rows.
+2025-09-02 19:23:42,977 — INFO — Upsert executed on 277 player rows.
+2025-09-02 19:23:42,978 — ERROR — 1 player(s) failed to fetch. Already flagged for dropping: ['#29GP2LGRR']
+2025-09-02 19:23:43,000 — INFO — No new seasons rankings to add.
+2025-09-02 19:23:43,446 — WARNING — Removed all database records for 1 player(s): ['#29GP2LGRR']
+2025-09-02 19:23:43,968 — INFO — Upsert executed on 121 card rows.
+2025-09-02 19:26:35,070 — INFO — Inserted 1379 new match views, of which 1338 are unique matches.
+2025-09-02 19:26:36,441 — INFO — Inserted 11032 new rows into match_cards, spanning 1379 match views.
+2025-09-02 19:26:36,442 — INFO — ETL pipeline complete
+Failed request for player #29GP2LGRR: 404
+2025-09-03 07:15:08,244 — INFO — Starting ETL pipeline
+2025-09-03 07:15:08,394 — INFO — No new seasons to add
+2025-09-03 07:17:52,656 — WARNING — Added 1 player(s) into dropped list.
+2025-09-03 07:23:37,701 — INFO — Upsert executed on 659 clan rows.
+2025-09-03 07:23:38,148 — INFO — Upsert executed on 276 player rows.
+2025-09-03 07:23:38,148 — ERROR — 1 player(s) failed to fetch. Already flagged for dropping: ['#29RUU9JQ9']
+2025-09-03 07:23:38,158 — INFO — No new seasons rankings to add.
+2025-09-03 07:23:39,355 — WARNING — Removed all database records for 1 player(s): ['#29RUU9JQ9']
+2025-09-03 07:23:39,967 — INFO — Upsert executed on 121 card rows.
+2025-09-03 07:26:40,017 — INFO — Inserted 1199 new match views, of which 1180 are unique matches.
+2025-09-03 07:26:41,374 — INFO — Inserted 9592 new rows into match_cards, spanning 1199 match views.
+2025-09-03 07:26:41,375 — INFO — ETL pipeline complete
+Failed request for player #29RUU9JQ9: 404
+2025-09-03 19:15:08,373 — INFO — Starting ETL pipeline
+2025-09-03 19:15:08,550 — INFO — No new seasons to add
+2025-09-03 19:18:05,531 — WARNING — Added 0 player(s) into dropped list.
+2025-09-03 19:23:51,220 — INFO — Upsert executed on 673 clan rows.
+2025-09-03 19:23:51,593 — INFO — Upsert executed on 276 player rows.
+2025-09-03 19:23:51,629 — INFO — No new seasons rankings to add.
+2025-09-03 19:23:52,165 — INFO — Upsert executed on 121 card rows.
+2025-09-03 19:26:41,176 — INFO — Inserted 1349 new match views, of which 1311 are unique matches.
+2025-09-03 19:26:42,581 — INFO — Inserted 10792 new rows into match_cards, spanning 1349 match views.
+2025-09-03 19:26:42,582 — INFO — ETL pipeline complete
+2025-09-04 07:15:08,062 — INFO — Starting ETL pipeline
+2025-09-04 07:15:08,258 — INFO — No new seasons to add
+2025-09-04 07:17:56,900 — WARNING — Added 0 player(s) into dropped list.
+2025-09-04 07:24:17,422 — INFO — Upsert executed on 683 clan rows.
+2025-09-04 07:24:17,850 — INFO — Upsert executed on 276 player rows.
+2025-09-04 07:24:17,858 — INFO — No new seasons rankings to add.
+2025-09-04 07:24:18,401 — INFO — Upsert executed on 121 card rows.
+2025-09-04 07:27:03,448 — INFO — Inserted 1077 new match views, of which 1050 are unique matches.
+2025-09-04 07:27:04,791 — INFO — Inserted 8616 new rows into match_cards, spanning 1077 match views.
+2025-09-04 07:27:04,791 — INFO — ETL pipeline complete
+2025-09-04 19:15:06,405 — INFO — Starting ETL pipeline
+2025-09-04 19:15:06,583 — INFO — No new seasons to add
+2025-09-04 19:17:54,301 — WARNING — Added 0 player(s) into dropped list.
+2025-09-04 19:24:13,103 — INFO — Upsert executed on 698 clan rows.
+2025-09-04 19:24:13,478 — INFO — Upsert executed on 276 player rows.
+2025-09-04 19:24:13,486 — INFO — No new seasons rankings to add.
+2025-09-04 19:24:14,066 — INFO — Upsert executed on 121 card rows.
+2025-09-04 19:27:15,794 — INFO — Inserted 1429 new match views, of which 1392 are unique matches.
+2025-09-04 19:27:17,135 — INFO — Inserted 11432 new rows into match_cards, spanning 1429 match views.
+2025-09-04 19:27:17,136 — INFO — ETL pipeline complete
+2025-09-05 07:15:03,663 — INFO — Starting ETL pipeline
+2025-09-05 07:15:03,735 — INFO — No new seasons to add
+2025-09-05 07:18:01,960 — WARNING — Added 0 player(s) into dropped list.
+2025-09-05 07:24:31,357 — INFO — Upsert executed on 702 clan rows.
+2025-09-05 07:24:31,657 — INFO — Upsert executed on 276 player rows.
+2025-09-05 07:24:31,666 — INFO — No new seasons rankings to add.
+2025-09-05 07:24:32,146 — INFO — Upsert executed on 121 card rows.
+2025-09-05 07:27:26,822 — INFO — Inserted 1014 new match views, of which 986 are unique matches.
+2025-09-05 07:27:28,047 — INFO — Inserted 8112 new rows into match_cards, spanning 1014 match views.
+2025-09-05 07:27:28,047 — INFO — ETL pipeline complete
+2025-09-05 19:15:07,134 — INFO — Starting ETL pipeline
+2025-09-05 19:15:07,815 — INFO — No new seasons to add
+2025-09-05 19:18:15,596 — WARNING — Added 17 player(s) into dropped list.
+2025-09-05 19:25:00,329 — INFO — Upsert executed on 719 clan rows.
+2025-09-05 19:25:01,338 — INFO — Upsert executed on 259 player rows.
+2025-09-05 19:25:01,338 — ERROR — 17 player(s) failed to fetch. Already flagged for dropping: ['#200GJLL208', '#8VQVQR822', '#C89L0002L', '#VL8GCGYL2', '#VGGQU98R', '#VC9PYQ028', '#QG9LCJ29', '#CPGRQ8VQV', '#C0V0UQ9UY', '#RRJVPYV08', '#VL98GUVJQ', '#UCL0UCPYC', '#8RJ9088QV', '#PUQQGVU80', '#CQQUYURC2', '#J02VCV2C0', '#CPLGLPU80']
+2025-09-05 19:25:01,353 — INFO — No new seasons rankings to add.
+2025-09-05 19:25:05,473 — WARNING — Removed all database records for 17 player(s): ['#200GJLL208', '#8VQVQR822', '#C89L0002L', '#VL8GCGYL2', '#VGGQU98R', '#VC9PYQ028', '#QG9LCJ29', '#CPGRQ8VQV', '#C0V0UQ9UY', '#RRJVPYV08', '#VL98GUVJQ', '#UCL0UCPYC', '#8RJ9088QV', '#PUQQGVU80', '#CQQUYURC2', '#J02VCV2C0', '#CPLGLPU80']
+2025-09-05 19:25:06,368 — INFO — Upsert executed on 121 card rows.
+2025-09-05 19:28:02,155 — INFO — Inserted 1270 new match views, of which 1239 are unique matches.
+2025-09-05 19:28:03,430 — INFO — Inserted 10160 new rows into match_cards, spanning 1270 match views.
+2025-09-05 19:28:03,432 — INFO — ETL pipeline complete
+Exception for player #200GJLL208: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/players/%23200GJLL208 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000027C7642F890>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for player #8VQVQR822: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/players/%238VQVQR822 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000027C7642F610>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for player #C89L0002L: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/players/%23C89L0002L (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000027C7642FC50>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for player #VL8GCGYL2: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/players/%23VL8GCGYL2 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000027C7642F4D0>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for player #VGGQU98R: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/players/%23VGGQU98R (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000027C764ECCD0>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for player #VC9PYQ028: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/players/%23VC9PYQ028 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000027C764EC550>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for player #QG9LCJ29: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/players/%23QG9LCJ29 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000027C764ECE10>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for player #CPGRQ8VQV: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/players/%23CPGRQ8VQV (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000027C764ED1D0>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for player #C0V0UQ9UY: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/players/%23C0V0UQ9UY (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000027C764ED590>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for player #RRJVPYV08: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/players/%23RRJVPYV08 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000027C7642F4D0>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for player #VL98GUVJQ: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/players/%23VL98GUVJQ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000027C7642FB10>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for player #UCL0UCPYC: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/players/%23UCL0UCPYC (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000027C7642F9D0>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for player #8RJ9088QV: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/players/%238RJ9088QV (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000027C7642FD90>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for player #PUQQGVU80: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/players/%23PUQQGVU80 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000027C764ED6D0>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for player #CQQUYURC2: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/players/%23CQQUYURC2 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000027C764ED310>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for player #J02VCV2C0: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/players/%23J02VCV2C0 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000027C764ECF50>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+Exception for player #CPLGLPU80: HTTPSConnectionPool(host='api.clashroyale.com', port=443): Max retries exceeded with url: /v1/players/%23CPLGLPU80 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000027C764ECB90>: Failed to resolve 'api.clashroyale.com' ([Errno 11001] getaddrinfo failed)"))
+2025-09-06 07:15:07,390 — INFO — Starting ETL pipeline
+2025-09-06 07:15:07,540 — INFO — No new seasons to add
+2025-09-06 07:17:31,929 — WARNING — Added 0 player(s) into dropped list.
+2025-09-06 07:23:35,142 — INFO — Upsert executed on 730 clan rows.
+2025-09-06 07:23:35,418 — INFO — Upsert executed on 259 player rows.
+2025-09-06 07:23:35,426 — INFO — No new seasons rankings to add.
+2025-09-06 07:23:35,911 — INFO — Upsert executed on 121 card rows.
+2025-09-06 07:26:12,585 — INFO — Inserted 847 new match views, of which 839 are unique matches.
+2025-09-06 07:26:13,753 — INFO — Inserted 6776 new rows into match_cards, spanning 847 match views.
+2025-09-06 07:26:13,754 — INFO — ETL pipeline complete
+2025-09-06 19:15:08,501 — INFO — Starting ETL pipeline
+2025-09-06 19:15:09,142 — INFO — No new seasons to add
+2025-09-06 19:17:34,573 — WARNING — Added 0 player(s) into dropped list.
+2025-09-06 19:23:57,846 — INFO — Upsert executed on 751 clan rows.
+2025-09-06 19:23:58,198 — INFO — Upsert executed on 259 player rows.
+2025-09-06 19:23:58,218 — INFO — No new seasons rankings to add.
+2025-09-06 19:23:58,721 — INFO — Upsert executed on 121 card rows.
+2025-09-06 19:26:51,372 — INFO — Inserted 1136 new match views, of which 1108 are unique matches.
+2025-09-06 19:26:52,825 — INFO — Inserted 9088 new rows into match_cards, spanning 1136 match views.
+2025-09-06 19:26:52,825 — INFO — ETL pipeline complete
+2025-09-07 07:15:08,402 — INFO — Starting ETL pipeline
+2025-09-07 07:15:08,733 — INFO — No new seasons to add
+2025-09-07 07:17:30,558 — WARNING — Added 0 player(s) into dropped list.
+2025-09-07 07:23:31,691 — INFO — Upsert executed on 757 clan rows.
+2025-09-07 07:23:32,249 — INFO — Upsert executed on 259 player rows.
+2025-09-07 07:23:32,260 — INFO — No new seasons rankings to add.
+2025-09-07 07:23:32,829 — INFO — Upsert executed on 121 card rows.
+2025-09-07 07:26:20,389 — INFO — Inserted 1020 new match views, of which 998 are unique matches.
+2025-09-07 07:26:21,879 — INFO — Inserted 8160 new rows into match_cards, spanning 1020 match views.
+2025-09-07 07:26:21,880 — INFO — ETL pipeline complete
+2025-09-07 19:15:08,742 — INFO — Starting ETL pipeline
+2025-09-07 19:15:08,898 — INFO — No new seasons to add
+2025-09-07 19:17:51,768 — WARNING — Added 0 player(s) into dropped list.
+2025-09-07 19:24:37,103 — INFO — Upsert executed on 766 clan rows.
+2025-09-07 19:24:37,438 — INFO — Upsert executed on 259 player rows.
+2025-09-07 19:24:37,449 — INFO — No new seasons rankings to add.
+2025-09-07 19:24:38,073 — INFO — Upsert executed on 121 card rows.
+2025-09-07 19:38:26,248 — INFO — Inserted 1306 new match views, of which 1272 are unique matches.
+2025-09-07 19:38:27,800 — INFO — Inserted 10448 new rows into match_cards, spanning 1306 match views.
+2025-09-07 19:38:27,801 — ERROR — 1 player(s) failed during match fetch. Retry later: ['#8UY9VLJLU']
+2025-09-07 19:38:27,801 — INFO — ETL pipeline complete
+exception for #8UY9VLJLU: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-09-08 07:15:08,390 — INFO — Starting ETL pipeline
+2025-09-08 07:15:08,538 — INFO — No new seasons to add
+2025-09-08 07:17:54,764 — WARNING — Added 0 player(s) into dropped list.
+2025-09-08 07:24:27,053 — INFO — Upsert executed on 772 clan rows.
+2025-09-08 07:24:27,387 — INFO — Upsert executed on 259 player rows.
+2025-09-08 07:24:27,409 — INFO — No new seasons rankings to add.
+2025-09-08 07:24:27,966 — INFO — Upsert executed on 121 card rows.
+2025-09-08 07:27:10,961 — INFO — Inserted 876 new match views, of which 855 are unique matches.
+2025-09-08 07:27:12,074 — INFO — Inserted 7008 new rows into match_cards, spanning 876 match views.
+2025-09-08 07:27:12,074 — INFO — ETL pipeline complete
+2025-09-08 19:15:10,225 — INFO — Starting ETL pipeline
+2025-09-08 19:15:10,393 — INFO — No new seasons to add
+2025-09-08 19:17:41,811 — WARNING — Added 0 player(s) into dropped list.
+2025-09-08 19:24:25,556 — INFO — Upsert executed on 781 clan rows.
+2025-09-08 19:24:25,881 — INFO — Upsert executed on 259 player rows.
+2025-09-08 19:24:25,889 — INFO — No new seasons rankings to add.
+2025-09-08 19:24:26,503 — INFO — Upsert executed on 121 card rows.
+2025-09-08 19:27:24,439 — INFO — Inserted 1407 new match views, of which 1349 are unique matches.
+2025-09-08 19:27:26,943 — INFO — Inserted 11256 new rows into match_cards, spanning 1407 match views.
+2025-09-08 19:27:26,943 — INFO — ETL pipeline complete
+2025-09-09 07:15:10,044 — INFO — Starting ETL pipeline
+2025-09-09 07:15:10,302 — INFO — No new seasons to add
+2025-09-09 07:17:52,726 — WARNING — Added 0 player(s) into dropped list.
+2025-09-09 07:25:20,198 — INFO — Upsert executed on 793 clan rows.
+2025-09-09 07:25:20,573 — INFO — Upsert executed on 259 player rows.
+2025-09-09 07:25:20,584 — INFO — No new seasons rankings to add.
+2025-09-09 07:25:21,435 — INFO — Upsert executed on 121 card rows.
+2025-09-09 07:28:22,987 — INFO — Inserted 1005 new match views, of which 985 are unique matches.
+2025-09-09 07:28:24,311 — INFO — Inserted 8040 new rows into match_cards, spanning 1005 match views.
+2025-09-09 07:28:24,312 — INFO — ETL pipeline complete
+2025-09-09 19:15:08,936 — INFO — Starting ETL pipeline
+2025-09-09 19:15:09,147 — INFO — No new seasons to add
+2025-09-09 19:17:48,415 — WARNING — Added 0 player(s) into dropped list.
+2025-09-09 19:25:04,804 — INFO — Upsert executed on 813 clan rows.
+2025-09-09 19:25:05,113 — INFO — Upsert executed on 259 player rows.
+2025-09-09 19:25:05,121 — INFO — No new seasons rankings to add.
+2025-09-09 19:25:05,708 — INFO — Upsert executed on 121 card rows.
+2025-09-09 19:27:58,590 — INFO — Inserted 1591 new match views, of which 1526 are unique matches.
+2025-09-09 19:27:59,780 — INFO — Inserted 12728 new rows into match_cards, spanning 1591 match views.
+2025-09-09 19:27:59,780 — INFO — ETL pipeline complete
+2025-09-10 07:50:35,680 — INFO — Starting ETL pipeline
+2025-09-10 07:50:36,629 — INFO — No new seasons to add
+Traceback (most recent call last):
+  File "C:\Users\yishakali\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yishakali\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yishakali\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\urllib3\connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yishakali\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yishakali\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yishakali\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yishakali\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\yishakali\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yishakali\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yishakali\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\urllib3\connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "\\Mac\Home\Desktop\Data Sci\06. Personal Projects\CR Data Pipeline Project\etl_pipeline_script.py", line 159, in <module>
+    run_etl_script()
+    ~~~~~~~~~~~~~~^^
+  File "\\Mac\Home\Desktop\Data Sci\06. Personal Projects\CR Data Pipeline Project\etl_pipeline_script.py", line 57, in run_etl_script
+    season_ranking_df = get_season_rankings(all_existing_past_seasons_ids)
+  File "\\Mac\Home\Desktop\Data Sci\06. Personal Projects\CR Data Pipeline Project\src\api_extract.py", line 73, in get_season_rankings
+    response = requests.get(f'{base_url}/locations/global/pathoflegend/{season}/rankings/players?limit=100', headers=headers)
+  File "C:\Users\yishakali\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\yishakali\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yishakali\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yishakali\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yishakali\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-09-10 08:05:12,199 — INFO — Starting ETL pipeline
+2025-09-10 08:05:12,379 — INFO — No new seasons to add
+2025-09-10 08:07:53,940 — WARNING — Added 0 player(s) into dropped list.
+2025-09-10 08:14:50,455 — INFO — Upsert executed on 817 clan rows.
+2025-09-10 08:14:50,836 — INFO — Upsert executed on 259 player rows.
+2025-09-10 08:14:50,857 — INFO — No new seasons rankings to add.
+2025-09-10 08:14:51,407 — INFO — Upsert executed on 121 card rows.
+2025-09-10 08:17:26,476 — INFO — Inserted 1263 new match views, of which 1211 are unique matches.
+2025-09-10 08:17:27,920 — INFO — Inserted 10104 new rows into match_cards, spanning 1263 match views.
+2025-09-10 08:17:27,921 — INFO — ETL pipeline complete
+2025-09-10 19:15:09,186 — INFO — Starting ETL pipeline
+2025-09-10 19:15:09,481 — INFO — No new seasons to add
+2025-09-10 19:17:38,915 — WARNING — Added 0 player(s) into dropped list.
+2025-09-10 19:24:20,271 — INFO — Upsert executed on 834 clan rows.
+2025-09-10 19:24:20,830 — INFO — Upsert executed on 259 player rows.
+2025-09-10 19:24:20,847 — INFO — No new seasons rankings to add.
+2025-09-10 19:24:21,430 — INFO — Upsert executed on 121 card rows.
+2025-09-10 19:26:57,070 — INFO — Inserted 1724 new match views, of which 1658 are unique matches.
+2025-09-10 19:26:58,702 — INFO — Inserted 13792 new rows into match_cards, spanning 1724 match views.
+2025-09-10 19:26:58,703 — INFO — ETL pipeline complete
+2025-09-11 07:15:10,001 — INFO — Starting ETL pipeline
+2025-09-11 07:15:10,152 — INFO — No new seasons to add
+2025-09-11 07:17:49,753 — WARNING — Added 0 player(s) into dropped list.
+2025-09-11 07:25:08,051 — INFO — Upsert executed on 838 clan rows.
+2025-09-11 07:25:08,379 — INFO — Upsert executed on 259 player rows.
+2025-09-11 07:25:08,391 — INFO — No new seasons rankings to add.
+2025-09-11 07:25:09,009 — INFO — Upsert executed on 121 card rows.
+2025-09-11 07:27:48,985 — INFO — Inserted 1388 new match views, of which 1315 are unique matches.
+2025-09-11 07:27:50,467 — INFO — Inserted 11104 new rows into match_cards, spanning 1388 match views.
+2025-09-11 07:27:50,468 — INFO — ETL pipeline complete
+2025-09-11 19:15:05,240 — INFO — Starting ETL pipeline
+2025-09-11 19:15:06,029 — INFO — No new seasons to add
+2025-09-11 19:17:32,250 — WARNING — Added 0 player(s) into dropped list.
+2025-09-11 19:24:41,421 — INFO — Upsert executed on 850 clan rows.
+2025-09-11 19:24:42,696 — INFO — Upsert executed on 259 player rows.
+2025-09-11 19:24:42,722 — INFO — No new seasons rankings to add.
+2025-09-11 19:24:43,425 — INFO — Upsert executed on 121 card rows.
+2025-09-11 19:27:25,203 — INFO — Inserted 1554 new match views, of which 1495 are unique matches.
+2025-09-11 19:27:27,009 — INFO — Inserted 12432 new rows into match_cards, spanning 1554 match views.
+2025-09-11 19:27:27,009 — INFO — ETL pipeline complete
+2025-09-12 07:16:11,994 — INFO — Starting ETL pipeline
+2025-09-12 07:16:12,866 — INFO — No new seasons to add
+2025-09-12 07:18:39,075 — WARNING — Added 0 player(s) into dropped list.
+2025-09-12 07:25:39,097 — INFO — Upsert executed on 854 clan rows.
+2025-09-12 07:25:39,546 — INFO — Upsert executed on 259 player rows.
+2025-09-12 07:25:39,556 — INFO — No new seasons rankings to add.
+2025-09-12 07:25:40,177 — INFO — Upsert executed on 121 card rows.
+2025-09-12 07:28:23,478 — INFO — Inserted 1215 new match views, of which 1178 are unique matches.
+2025-09-12 07:28:24,948 — INFO — Inserted 9720 new rows into match_cards, spanning 1215 match views.
+2025-09-12 07:28:24,949 — INFO — ETL pipeline complete
+2025-09-12 19:15:08,569 — INFO — Starting ETL pipeline
+2025-09-12 19:15:08,688 — INFO — No new seasons to add
+2025-09-12 19:17:50,865 — WARNING — Added 0 player(s) into dropped list.
+2025-09-12 19:25:48,316 — INFO — Upsert executed on 872 clan rows.
+2025-09-12 19:25:48,615 — INFO — Upsert executed on 259 player rows.
+2025-09-12 19:25:48,622 — INFO — No new seasons rankings to add.
+2025-09-12 19:25:49,177 — INFO — Upsert executed on 121 card rows.
+2025-09-12 19:28:29,003 — INFO — Inserted 1854 new match views, of which 1790 are unique matches.
+2025-09-12 19:28:30,501 — INFO — Inserted 14832 new rows into match_cards, spanning 1854 match views.
+2025-09-12 19:28:30,502 — INFO — ETL pipeline complete
+2025-09-13 07:15:10,611 — INFO — Starting ETL pipeline
+2025-09-13 07:15:10,875 — INFO — No new seasons to add
+2025-09-13 07:17:47,024 — WARNING — Added 0 player(s) into dropped list.
+2025-09-13 07:25:35,074 — INFO — Upsert executed on 882 clan rows.
+2025-09-13 07:25:35,406 — INFO — Upsert executed on 259 player rows.
+2025-09-13 07:25:35,420 — INFO — No new seasons rankings to add.
+2025-09-13 07:25:35,957 — INFO — Upsert executed on 121 card rows.
+2025-09-13 07:28:22,524 — INFO — Inserted 1343 new match views, of which 1287 are unique matches.
+2025-09-13 07:28:23,909 — INFO — Inserted 10744 new rows into match_cards, spanning 1343 match views.
+2025-09-13 07:28:23,910 — INFO — ETL pipeline complete
