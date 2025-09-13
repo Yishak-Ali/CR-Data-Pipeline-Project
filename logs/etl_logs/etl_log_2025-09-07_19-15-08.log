@@ -1,0 +1,11 @@
+2025-09-07 19:15:08,742 — INFO — Starting ETL pipeline
+2025-09-07 19:15:08,898 — INFO — No new seasons to add
+2025-09-07 19:17:51,768 — WARNING — Added 0 player(s) into dropped list.
+2025-09-07 19:24:37,103 — INFO — Upsert executed on 766 clan rows.
+2025-09-07 19:24:37,438 — INFO — Upsert executed on 259 player rows.
+2025-09-07 19:24:37,449 — INFO — No new seasons rankings to add.
+2025-09-07 19:24:38,073 — INFO — Upsert executed on 121 card rows.
+2025-09-07 19:38:26,248 — INFO — Inserted 1306 new match views, of which 1272 are unique matches.
+2025-09-07 19:38:27,800 — INFO — Inserted 10448 new rows into match_cards, spanning 1306 match views.
+2025-09-07 19:38:27,801 — ERROR — 1 player(s) failed during match fetch. Retry later: ['#8UY9VLJLU']
+2025-09-07 19:38:27,801 — INFO — ETL pipeline complete

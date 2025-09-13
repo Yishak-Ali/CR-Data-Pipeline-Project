@@ -1,0 +1,10 @@
+2025-08-20 19:15:08,142 — INFO — Starting ETL pipeline
+2025-08-20 19:15:08,288 — INFO — No new seasons to add
+2025-08-20 19:18:12,286 — WARNING — Added 0 player(s) into dropped list.
+2025-08-20 19:22:43,813 — INFO — Upsert executed on 441 clan rows.
+2025-08-20 19:22:44,197 — INFO — Upsert executed on 233 player rows.
+2025-08-20 19:22:44,213 — INFO — No new seasons rankings to add.
+2025-08-20 19:22:44,900 — INFO — Upsert executed on 120 card rows.
+2025-08-20 19:25:06,246 — INFO — Inserted 2666 new match views, of which 2579 are unique matches.
+2025-08-20 19:25:07,868 — INFO — Inserted 21328 new rows into match_cards, spanning 2666 match views.
+2025-08-20 19:25:07,868 — INFO — ETL pipeline complete

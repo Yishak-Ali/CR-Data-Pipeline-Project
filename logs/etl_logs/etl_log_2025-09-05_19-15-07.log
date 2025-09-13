@@ -1,0 +1,12 @@
+2025-09-05 19:15:07,134 — INFO — Starting ETL pipeline
+2025-09-05 19:15:07,815 — INFO — No new seasons to add
+2025-09-05 19:18:15,596 — WARNING — Added 17 player(s) into dropped list.
+2025-09-05 19:25:00,329 — INFO — Upsert executed on 719 clan rows.
+2025-09-05 19:25:01,338 — INFO — Upsert executed on 259 player rows.
+2025-09-05 19:25:01,338 — ERROR — 17 player(s) failed to fetch. Already flagged for dropping: ['#200GJLL208', '#8VQVQR822', '#C89L0002L', '#VL8GCGYL2', '#VGGQU98R', '#VC9PYQ028', '#QG9LCJ29', '#CPGRQ8VQV', '#C0V0UQ9UY', '#RRJVPYV08', '#VL98GUVJQ', '#UCL0UCPYC', '#8RJ9088QV', '#PUQQGVU80', '#CQQUYURC2', '#J02VCV2C0', '#CPLGLPU80']
+2025-09-05 19:25:01,353 — INFO — No new seasons rankings to add.
+2025-09-05 19:25:05,473 — WARNING — Removed all database records for 17 player(s): ['#200GJLL208', '#8VQVQR822', '#C89L0002L', '#VL8GCGYL2', '#VGGQU98R', '#VC9PYQ028', '#QG9LCJ29', '#CPGRQ8VQV', '#C0V0UQ9UY', '#RRJVPYV08', '#VL98GUVJQ', '#UCL0UCPYC', '#8RJ9088QV', '#PUQQGVU80', '#CQQUYURC2', '#J02VCV2C0', '#CPLGLPU80']
+2025-09-05 19:25:06,368 — INFO — Upsert executed on 121 card rows.
+2025-09-05 19:28:02,155 — INFO — Inserted 1270 new match views, of which 1239 are unique matches.
+2025-09-05 19:28:03,430 — INFO — Inserted 10160 new rows into match_cards, spanning 1270 match views.
+2025-09-05 19:28:03,432 — INFO — ETL pipeline complete
