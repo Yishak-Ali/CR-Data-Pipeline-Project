@@ -32,6 +32,7 @@ This project builds on an [earlier analytics work](https://github.com/Yishak-Ali
     - requests
     - pyodbc
 - SQL Server
+- Power BI
 - Visual Studio Code
 - Task Scheduler
 
@@ -121,7 +122,7 @@ A dynamic player ID filter removes known terminated or banned players before pro
 ## Limitations & Future Work
 There are a few limitations with this work. One element is that while the exact limit is unknown due to poor API documentation, there is *some* rate limit to the API. The ETL script has built-in wait periods to stay under a reasonable limit, but this means that as the number of tracked entities grows, run times will keeping growing. 
 
-Additionally, depending on the frequency of script runs, you will miss matches by players. The API only returns the last 30 matches, so it is possible players can play enough games between script runs to wipe the API's access to older but not yet stored games. With enough runs though, the database will store plenty of matches for the current and historical seasons to run meaningful analytics, despite these gaps.
+Additionally, depending on the frequency of script runs, you will miss matches by players. The API only returns the last 30 matches, so it is possible players can play enough games between script runs to wipe the API's access to older but not yet stored games. With enough runs though, the database will store plenty of matches for the current and historical seasons to run meaningful analytics, despite these gaps. In theory, though, if you set the run frequency to every 90 minutes (3 min per game assuming no OT * 30 games), you could capture all matches.
 
 With regard to future work, a data warehouse might be useful for long-term storage of historical data (matches and players past a certain season or historical clans). This would help with growing run times as older entities are archived into a warehouse, removing the need to ping data for them.
 
